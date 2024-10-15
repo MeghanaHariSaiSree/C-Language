@@ -1,13 +1,14 @@
 #include<stdio.h>
 int main()
 {
-    int i,num;
+    int i,num,orgnum;
     printf("Enter a number :");
     scanf("%d",&num);
+    orgnum=num;
     for(i=0;num>0;i++)
     {
         num=num/10;
     }
-    printf("The number of digits is : %d ",i);
+    printf("The number of digits in %d is : %d ",orgnum,i);
     return 0;
 }
