@@ -3,9 +3,9 @@
 int main()
 {
     int rows,cols,i,j;
-    printf("Enter the number of rows in first array : ");
+    printf("Enter the number of rows in arrays : ");
     scanf("%d", &rows);
-    printf("Enter the number of columns in first array : ");
+    printf("Enter the number of columns in arrays : ");
     scanf("%d", &cols);
     int array1[rows][cols];
     int array2[rows][cols];
