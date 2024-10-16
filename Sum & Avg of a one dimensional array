@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+    int size;
+     float average,sum=0.0;
+    printf("Enter a number of elements you want in an array : ");
+    scanf("%d",&size);
+     int arr[size];
+    for(int i=0;i<size;i++)
+    {
+        printf("Enter element %d :",i+1);
+        scanf("\n %d",&arr[i]);
+    }
+    printf("\n Displaying the one dimensional array of %d elements : \n",size);
+   for(int i=0;i<size;i++)
+    {
+     printf(" %d \t",arr[i]);
+    }
+    for (int i = 0; i < size; i++)
+    {
+        sum +=arr[i];
+    }
+    printf("\n Total sum of the array : %.2f \n",sum);
+    average = (sum/size);
+    printf("Average of the array : %.2f",average);
+    return 0;
+}
