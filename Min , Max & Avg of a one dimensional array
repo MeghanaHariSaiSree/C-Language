@@ -1,0 +1,47 @@
+#include<stdio.h>
+int main()
+{
+    int size;
+    printf("Enter a number of elements you want in an array : ");
+    scanf("%d",&size);
+     int arr[size];
+    for(int i=0;i<size;i++)
+    {
+        printf(" Enter element %d :",i+1);
+        scanf("\n %d",&arr[i]);
+    }
+    printf("\n Displaying the one dimensional array of %d elements : \n",size);
+    for(int i=0;i<size;i++)
+    {
+     printf(" %d \t",arr[i]);
+    }
+    int min_num = arr[0]; 
+    for (int i = 1; i < size; i++)
+    {
+        if (arr[i] < min_num)
+        {
+            min_num = arr[i];
+        }
+    }
+    printf("\n Minimum or Smallest element of the array: %d\n", min_num);
+    
+    int max_num = arr[0]; 
+    for (int i = 1; i < size; i++)
+    {
+        if (arr[i] > max_num)
+        {
+            max_num = arr[i];
+        }
+    }
+    printf("\n Maximum or Largest element of the array: %d\n", max_num);
+    
+    float average,sum=0.0;
+    for (int i = 0; i < size; i++)
+    {
+        sum +=arr[i];
+    }
+    average = (sum/size);
+    printf("Average of the array : %.2f",average);
+   
+     return 0;
+}
