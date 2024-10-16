@@ -35,13 +35,5 @@ int main()
     }
     printf("\n Maximum or Largest element of the array: %d\n", max_num);
     
-    float average,sum=0.0;
-    for (int i = 0; i < size; i++)
-    {
-        sum +=arr[i];
-    }
-    average = (sum/size);
-    printf("Average of the array : %.2f",average);
-   
-     return 0;
+return 0;
 }
