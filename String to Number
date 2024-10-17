@@ -1,0 +1,14 @@
+#include<stdio.h>
+void main()
+{
+    char str[10];
+    printf("Enter a string in the form of numbers:");
+    gets(str);
+    int res=0;
+    int len=strlen(str);
+    for(int i=0;i<len;i++)
+    {
+        res=(res*10)+(str[i]-'0');
+    }
+    printf("Number is:%d",res);
+}
