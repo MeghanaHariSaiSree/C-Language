@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <conio.h>
+int circle();
+int rectangle();
+int triangle();
+void main()
+{
+    int choice;
+    printf("Enter your choice : ");
+    scanf("%d",&choice);
+    printf("1.CIRCLE\n2.RECTANGLE\n3.TRIANGLE\n");
+    switch(choice)
+    {
+        case 1:circle();
+                break;
+        case 2:rectangle();
+                break;
+        case 3:triangle();
+                break;
+        default : printf("Invalid Choice");
+    }
+}
+circle()
+{
+    int r;
+    printf("Enter the radius : ");
+    scanf("%d",&r);
+    float area=3.14*r*r;
+    printf("Area of triangle is : %.2f",area);
+
+}
+rectangle()
+{
+    int length,breadth;
+    printf("Enter length of the rectangle : ");
+    scanf("%d",&length);
+    printf("Enter breadth of the rectangle : ");
+    scanf("%d",&breadth);
+    printf("Area of rectangle is : %d",length*breadth);
+}
+triangle()
+{
+    int length,breadth,height;
+    printf("Enter the length of the triangle : ");
+    scanf("%d",&length);
+    printf("Enter the breadth of the triangle : ");
+    scanf("%d",&breadth);
+    printf("Enter the height of the triangle : ");
+    scanf("%d",&height);
+    printf("Area of triangle is : %d",length+breadth+height);
+}
